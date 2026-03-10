@@ -1,26 +1,26 @@
-# Generated with JReleaser 1.22.0 at 2026-03-10T08:22:58.591419458Z
+# Generated with JReleaser 1.22.0 at 2026-03-10T09:19:20.161996724Z
 
 class Streamx < Formula
   desc "StreamX CLI"
   homepage "https://github.com/streamx-com/streamx-cli"
-  version "0.5.2-rc.1.e5667a2"
+  version "0.5.3-rc.1.6012ba6"
   license "LicenseRef-StreamX"
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/streamx-com/streamx-cli-preview/releases/download/0.5.2-rc.1.e5667a2/streamx-0.5.2-rc.1.e5667a2-linux-aarch64.zip"
-    sha256 "1081dc985a093152ad4a81e8267ce5089d636339811e3842f6ba792dd7f6ed68"
+    url "https://github.com/streamx-com/streamx-cli-preview/releases/download/0.5.3-rc.1.6012ba6/streamx-0.5.3-rc.1.6012ba6-linux-aarch64.zip"
+    sha256 "5c2cf9297e419ec2552ef6c0527fb48ed8a0aa6ac0829bd7fd085fd2a0479ffd"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/streamx-com/streamx-cli-preview/releases/download/0.5.2-rc.1.e5667a2/streamx-0.5.2-rc.1.e5667a2-linux-x86_64.zip"
-    sha256 "c372436767b8d8eab3b17bc666086042c8e7c7e307253d24f64095de794e1757"
+    url "https://github.com/streamx-com/streamx-cli-preview/releases/download/0.5.3-rc.1.6012ba6/streamx-0.5.3-rc.1.6012ba6-linux-x86_64.zip"
+    sha256 "49928a3ab566d3c48c47deff23d18e111d3ccd99a57aad81fbb7736c16d8bd3b"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/streamx-com/streamx-cli-preview/releases/download/0.5.2-rc.1.e5667a2/streamx-0.5.2-rc.1.e5667a2-macos-aarch64.zip"
-    sha256 "10bb4c2c8cc29953cbfb7f969acdbf28d1434a045b556c4bc803523593d480a5"
+    url "https://github.com/streamx-com/streamx-cli-preview/releases/download/0.5.3-rc.1.6012ba6/streamx-0.5.3-rc.1.6012ba6-macos-aarch64.zip"
+    sha256 "b4dc07ff333ce76435e04753ed35d12d68d1c94fbf636766b30b2d6883485ea7"
   end
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/streamx-com/streamx-cli-preview/releases/download/0.5.2-rc.1.e5667a2/streamx-0.5.2-rc.1.e5667a2-macos-x86_64.zip"
-    sha256 "dfc2bb5a2fc6db03e014df1baea5b839973438b92473adb0d5541fa4a4957bbe"
+    url "https://github.com/streamx-com/streamx-cli-preview/releases/download/0.5.3-rc.1.6012ba6/streamx-0.5.3-rc.1.6012ba6-macos-x86_64.zip"
+    sha256 "e13f3d0500d911e748c9736aea3198a82c525022899d98daa9a8801b11d02699"
   end
 
 
@@ -31,6 +31,6 @@ class Streamx < Formula
 
   test do
     output = shell_output("#{bin}/streamx --version")
-    assert_match "0.5.2-rc.1.e5667a2", output
+    assert_match "0.5.3-rc.1.6012ba6", output
   end
 end
