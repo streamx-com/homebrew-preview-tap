@@ -1,11 +1,11 @@
-# Generated with JReleaser 1.22.0 at 2026-04-11T19:49:56.608654028Z
+# Generated with JReleaser 1.22.0 at 2026-04-17T07:06:10.63640178Z
 
 class StreamxJvm < Formula
   desc "StreamX CLI"
   homepage "https://github.com/streamx-com/streamx-cli"
-  url "https://github.com/streamx-com/streamx-cli-preview/releases/download/2.0.3-rc.6a36ffc/streamx-jar-2.0.3-rc.6a36ffc.zip"
-  version "2.0.3-rc.6a36ffc"
-  sha256 "54c7a71cf88366d4850a687501717603bfd2584a8811e45f8defac4ce19621c2"
+  url "https://github.com/streamx-com/streamx-cli-preview/releases/download/2.0.3-rc.056d096/streamx-jar-2.0.3-rc.056d096.zip"
+  version "2.0.3-rc.056d096"
+  sha256 "966560cc72e538f9b0e3dade146edcb8dc6c14641e295ace4d4e3cea6205a220"
   license "LicenseRef-StreamX"
 
   depends_on "openjdk@21"
@@ -22,6 +22,6 @@ class StreamxJvm < Formula
 
   test do
     output = shell_output("#{bin}/streamx --version")
-    assert_match "2.0.3-rc.6a36ffc", output
+    assert_match "2.0.3-rc.056d096", output
   end
 end
